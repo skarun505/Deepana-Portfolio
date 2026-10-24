@@ -55,10 +55,6 @@ export const Education: React.FC = () => {
                 </h3>
               </div>
 
-              <p className="text-xs text-inkMuted mb-4 italic">
-                {education.certificationsPlaceholder}
-              </p>
-
               <div className="flex flex-wrap gap-2.5">
                 {education.certifications.map((cert, cIdx) => (
                   <Chip

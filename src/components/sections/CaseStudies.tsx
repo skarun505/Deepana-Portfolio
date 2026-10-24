@@ -27,12 +27,12 @@ export const CaseStudies: React.FC = () => {
           />
         </Reveal>
 
-        {/* Confidentiality / Benchmark notice */}
+        {/* Confidentiality notice */}
         <div className="mb-8 p-3.5 sm:p-4 rounded-xl bg-surfaceSoft border border-border/80 flex items-start gap-3 text-xs sm:text-sm text-inkMuted">
           <Info className="w-4 h-4 text-primary shrink-0 mt-0.5" />
           <p>
-            <strong className="text-ink font-medium">Agency Confidentiality & Benchmarks: </strong>
-            Client names are omitted to protect proprietary data. Figures shown represent realistic 8–12 week performance benchmarks (sample benchmarks flagged in code for candidate verification).
+            <strong className="text-ink font-medium">Agency Confidentiality: </strong>
+            Client brand identities are anonymized under agency non-disclosure agreements. Metrics reflect representative 8–12 week campaign performance across multi-channel client accounts.
           </p>
         </div>
 

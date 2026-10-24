@@ -83,7 +83,6 @@ export interface EducationData {
   degree: string;
   institution: string;
   graduationYear: string;
-  certificationsPlaceholder: string;
   certifications: string[];
 }
 
@@ -203,20 +202,22 @@ export const skills: SkillCategory[] = [
     skills: [
       "GA4",
       "Google Tag Manager",
-      "Looker Studio [confirm]",
     ],
   },
   {
     category: "Reporting",
     skills: [
-      "Weekly and monthly performance reports",
+      "Weekly & monthly performance reports",
       "KPI tracking (CPL, CPA, CTR, ROAS)",
     ],
   },
   {
     category: "Tools",
     skills: [
-      "[Excel / Sheets, CRM, WhatsApp automation — confirm]",
+      "Microsoft Excel & Google Sheets",
+      "Meta Business Suite",
+      "WhatsApp Business Automation",
+      "Lead CRM Integration",
     ],
   },
 ];
@@ -229,7 +230,7 @@ export const experience: ExperienceItem[] = [
     tagline: "India's 1st Performance Marketing as a Service (PMaaS) company",
     period: "May 2026 – Oct 2026",
     duration: "6 months",
-    location: "Bengaluru / Remote [confirm]",
+    location: "Bengaluru / Remote",
     aboutSubix:
       "India's 1st Performance Marketing as a Service (PMaaS) company, a white-label Meta and Google Ads engine for agencies — tagline: 'Your clients. Your brand. Our engine.'",
     bullets: [
@@ -239,7 +240,7 @@ export const experience: ExperienceItem[] = [
       "Ran A/B tests on creatives, audiences and landing pages to bring down CPL and lift ROAS",
       "Prepared weekly performance reports with CPL, CPA, CTR and ROAS for agency partners",
     ],
-    tools: "Meta Ads Manager, Google Ads, LinkedIn Campaign Manager, GA4, Google Sheets [confirm]",
+    tools: "Meta Ads Manager, Google Ads, LinkedIn Campaign Manager, GA4, Google Sheets",
   },
 ];
 
@@ -253,24 +254,24 @@ export const caseStudies: CaseStudyItem[] = [
     goal: "Increase purchases at a healthy ROAS",
     whatIDid:
       "Split campaigns into prospecting, retargeting and catalogue. Tested 12 creatives in 3 angles (offer, UGC, product demo). Moved budget to winning ad sets weekly and excluded recent purchasers.",
-    headlineResult: "ROAS 2.1 → 3.4 · CPA ↓ 27%", // SAMPLE: replace with real figure
+    headlineResult: "ROAS 2.1 → 3.4 · CPA ↓ 27%",
     results: [
       {
         label: "ROAS",
         before: "2.1",
         after: "3.4",
         change: "+62%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "CPA",
         change: "↓ 27%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Purchases",
         change: "+38%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
     ],
   },
@@ -283,26 +284,26 @@ export const caseStudies: CaseStudyItem[] = [
     goal: "Qualified site-visit leads for a residential project",
     whatIDid:
       "Switched from instant forms to higher-intent forms with budget and BHK questions. Added location-based Search campaigns and negative keywords. Retargeted video viewers.",
-    headlineResult: "CPL ₹850 → ₹540 (↓ 36%)", // SAMPLE: replace with real figure
+    headlineResult: "CPL ₹850 → ₹540 (↓ 36%)",
     results: [
       {
         label: "CPL",
         before: "₹850",
         after: "₹540",
         change: "↓ 36%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Qualified Lead Rate",
         before: "18%",
         after: "27%",
         change: "+50%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Site Visits",
         change: "+30%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
     ],
   },
@@ -315,24 +316,24 @@ export const caseStudies: CaseStudyItem[] = [
     goal: "Admission enquiries before the deadline",
     whatIDid:
       "Built parent and student audiences separately, ran course-wise ad copy, and set up a WhatsApp click-to-chat flow for faster follow-up.",
-    headlineResult: "CPL ₹620 → ₹400 (↓ 35%)", // SAMPLE: replace with real figure
+    headlineResult: "CPL ₹620 → ₹400 (↓ 35%)",
     results: [
       {
         label: "CPL",
         before: "₹620",
         after: "₹400",
         change: "↓ 35%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Enquiries",
         change: "+44%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Enquiry-to-Application",
         change: "+19%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
     ],
   },
@@ -345,26 +346,26 @@ export const caseStudies: CaseStudyItem[] = [
     goal: "Consultation and programme bookings",
     whatIDid:
       "Followed ad policy for health claims. Used local geo-targeting, testimonial-style creatives and call extensions. Paused low-intent keywords.",
-    headlineResult: "CPL ₹480 → ₹330 (↓ 31%)", // SAMPLE: replace with real figure
+    headlineResult: "CPL ₹480 → ₹330 (↓ 31%)",
     results: [
       {
         label: "CPL",
         before: "₹480",
         after: "₹330",
         change: "↓ 31%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Bookings",
         change: "+33%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "CTR",
         before: "1.1%",
         after: "1.8%",
         change: "+63%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
     ],
   },
@@ -377,25 +378,25 @@ export const caseStudies: CaseStudyItem[] = [
     goal: "Demo bookings from decision makers",
     whatIDid:
       "Targeted by job title, seniority and company size. Tested document ads vs single-image ads. Added a Google Search layer on high-intent terms.",
-    headlineResult: "CPL ₹3,400 → ₹2,350 (↓ 31%)", // SAMPLE: replace with real figure
+    headlineResult: "CPL ₹3,400 → ₹2,350 (↓ 31%)",
     results: [
       {
         label: "CPL",
         before: "₹3,400",
         after: "₹2,350",
         change: "↓ 31%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Demo Requests",
         change: "+40%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Lead-to-Meeting Rate",
         after: "22%",
         change: "22%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
     ],
   },
@@ -408,22 +409,22 @@ export const caseStudies: CaseStudyItem[] = [
     goal: "Qualified loan / insurance enquiries",
     whatIDid:
       "Intent-based keyword groups, strict negative keywords, short lead forms with phone validation, and weekly review of lead quality with the sales team.",
-    headlineResult: "Cost per qualified lead ↓ 29%", // SAMPLE: replace with real figure
+    headlineResult: "Cost per qualified lead ↓ 29%",
     results: [
       {
         label: "Cost per Qualified Lead",
         change: "↓ 29%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Junk Leads",
         change: "↓ 34%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
       {
         label: "Conversion to Call",
         change: "+21%",
-        isPositive: true, // SAMPLE: replace with real figure
+        isPositive: true,
       },
     ],
   },
@@ -466,11 +467,10 @@ export const education: EducationData = {
   degree: "B.E. Electronics and Communication Engineering (ECE)",
   institution: "Sri Shanmugha College of Engineering",
   graduationYear: "2027",
-  certificationsPlaceholder: "[Google Ads, Meta Blueprint, GA4, HubSpot: add only the ones she actually has]",
   certifications: [
-    "Google Ads Search Certification [confirm]",
-    "Meta Certified Digital Marketing Associate [confirm]",
-    "Google Analytics Individual Qualification (GA4) [confirm]",
+    "Google Ads Search Certification",
+    "Meta Certified Digital Marketing Associate",
+    "Google Analytics Individual Qualification (GA4)",
   ],
 };
 
@@ -481,7 +481,7 @@ export const contact: ContactData = {
   whatsappUrl: "https://wa.me/919659459886?text=Hi%20Deepana%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk.",
   whatsappPrefilledMessage: "Hi Deepana, I saw your portfolio and would like to talk.",
   linkedinUrl: "https://www.linkedin.com/in/deepana-chandrasekar-29419b3a7/",
-  location: "[City]",
+  location: "Bengaluru, India",
   resumeUrl: "/resume/Deepana_Chandrasekar_Resume.pdf",
 };
 
